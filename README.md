@@ -12,6 +12,8 @@ rails version `5.2.2`
 
 ### You can find the deployed API: [HERE](http://bhe-tweet-api.herokuapp.com/api/v1/tweets)
 
+> Please note that the deployed version of the API is facing some issues right now. For example, creating a POST request results in a status 500 code. These errors do not exist locally so please try cloning this repository and following the steps under the section labelled: `Setup`. Thanks!
+
 #
 
 ## Setup
