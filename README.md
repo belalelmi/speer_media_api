@@ -8,6 +8,12 @@ rails version `5.2.2`
 
 ![""](https://github.com/belalelmi/speer_media_api/blob/master/public/postman_crud.png?raw=true)
 
+#
+
+### You can find the deployed API: [HERE](http://bhe-tweet-api.herokuapp.com/api/v1/tweets)
+
+#
+
 ## Setup
 
 Check out this repository and then run,
