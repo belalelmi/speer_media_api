@@ -1,2 +1,2 @@
-class Admin::BaseController < ApplicationController
+class Api::V1::BaseController < ApplicationController
 end
