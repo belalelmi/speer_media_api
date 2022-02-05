@@ -1,9 +1,9 @@
-class RegistrationsController < ApplicationController
+class Api::RegistrationsController < ApplicationController
   def create
     user = User.create!(
       email: params["user"]["email"],
       password: params["user"]["password"],
-      password_confirmation: params["user"]["password"] # add '_confirmation' to "password" to require user to supply a password confirmation
+      password_confirmation: params["user"]["password"] # add '_confirmation' to "password" to require user to supply password confirmation
     )
     if user
       session[:user_id] = user.id
