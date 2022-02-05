@@ -1,4 +1,5 @@
 class Api::V1::TweetsController < ApplicationController
+  include CurrentUserConcern
   before_action :set_tweet, only: [:show, :update, :destroy]
 
   # GET /tweets
@@ -15,7 +16,7 @@ class Api::V1::TweetsController < ApplicationController
 
   # POST /tweets
   def create
-    @tweet = Tweet.new(tweet_params)
+    @tweet = current_user.tweets.build(tweet_params)
 
     if @tweet.save
       render json: @tweet, status: :created
