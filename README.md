@@ -1,5 +1,7 @@
 # README
 
+![""](https://github.com/belalelmi/speer_media_api/blob/master/public/postman_crud.png?raw=true)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
