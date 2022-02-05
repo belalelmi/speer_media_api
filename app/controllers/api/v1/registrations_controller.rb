@@ -12,7 +12,7 @@ class Api::V1::RegistrationsController < ApplicationController
         user: user
       }
     else
-        render json: { status: 500 }
+        render json: { status: 401 }
     end
   end
 end
