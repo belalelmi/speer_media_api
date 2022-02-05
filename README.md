@@ -1,26 +1,46 @@
-# README
+## BackEnd Assessment
+
+ruby version `2.6.6`
+
+rails version `5.2.2`
+
+### The endpoints that exist are shown in the image below:
 
 ![""](https://github.com/belalelmi/speer_media_api/blob/master/public/postman_crud.png?raw=true)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+Check out this repository and then run,
 
-- Ruby version
+```console
+$ bundle install
+$ bundle exec rails db:migrate
+$ bundle exec rails server
+```
 
-- System dependencies
+## Features
 
-- Configuration
+Here are the features that are include:
 
-- Database creation
+- User Register capabilities
+- Login capabilities
+- Get all Tweets
+- Create new Tweet
+- Delete a tweet
+- Update a tweet
 
-- Database initialization
+### For testing
 
-- How to run the test suite
+- rspec
+- factory_bot
+- faker
 
-- Services (job queues, cache servers, search engines, etc.)
+### For debugging
 
-- Deployment instructions
+- pry-byebug
 
-- ...
+## Testing
+
+```console
+$ bundle exec rspec
+```
