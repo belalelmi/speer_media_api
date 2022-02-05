@@ -1,4 +1,4 @@
-class Api::SessionsController < ApplicationController
+class Api::V1::SessionsController < ApplicationController
   include CurrentUserConcern
   
   def create
@@ -14,7 +14,9 @@ class Api::SessionsController < ApplicationController
         user: user
       }      
     else
-      render json: { status: 401 }
+      render json: {
+        status: 401  
+        }
     end
   end 
 
@@ -38,6 +40,13 @@ class Api::SessionsController < ApplicationController
       status: 200, 
       logout: true
     }
+  end
+  def correct_user
+    unless current_user?(@user)
+      render json: {
+        status: 401  
+        }
+    end
   end
 
 end
